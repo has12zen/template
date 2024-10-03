@@ -1,64 +1,74 @@
-/*
-// Problem: $(PROBLEM)
-// Contest: $(CONTEST)
-// Judge: $(JUDGE)
-// URL: $(URL)
-// Memory Limit: $(MEMLIM)
-// Time Limit: $(TIMELIM)
-// Start: $(DATE)
-*/
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+#include <set>
+#include <map>
+#include <queue>
+#include <stack>
+#include <cmath>
+#include <climits>
+#include <cstring>
+#include <cstdio>
+#include <cstdlib>
+#include <ctime>
+#include <cassert>
 
-#include <bits/stdc++.h>
+#define DEBUGGING true
+
+#ifdef DEBUGGING
+    #include "../cpp-dump/cpp-dump.hpp"
+    namespace cp = cpp_dump;
+#endif
+
 using namespace std;
-#define int long long
-#define fast                        \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout << setprecision(12) << fixed;
-#define rep(i, begin, end)                            \
-  for (__typeof(end) i = (begin) - ((begin) > (end)); \
-       i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
-// __builtin_ffs(x) it return least significant digit index
 
-#define f(i, a, b) for (int i = a; i < b; i++)
-const int N = 1e5 + 1;
-const int mod = 1e9 + 7;
-const int inf = 2e18;
+#define fast_io                       \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);
+#define ll long long
+#define ld long double
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define all(x) x.begin(), x.end()
+#define rall(x) x.rbegin(), x.rend()
+#define sz(x) (int)(x.size())
+#define rep(i, a, b) for (int i = a; i < b; ++i)
+#define repr(i, a, b) for (int i = a; i >= b; --i)
+#define endl '\n'
 
-template <typename t1, typename t2>
-istream &operator>>(istream &istream, pair<t1, t2> &p) {
-  return (istream >> p.first >> p.second);
+const int MOD = 1e9 + 7;
+const int INF = INT_MAX;
+const ll LINF = LLONG_MAX;
+const double PI = acos(-1.0);
+
+void solve()
+{
+    // Your code here
+    int n;
+    string s;
+
+#ifdef DEBUGGING
+    cout << "Debug mode: n = " << n << ", s = " << s << endl;
+#endif
 }
 
-template <typename t>
-istream &operator>>(istream &istream, vector<t> &v) {
-  for (auto &it : v) {
-    cin >> it;
-  }
-  return istream;
-}
+int main()
+{
+    fast_io;
+    
+#ifdef DEBUGGING
+    CPP_DUMP_SET_OPTION(es_style, cp::types::es_style_t::no_es);
+#endif
 
-template <typename t1, typename t2>
-ostream &operator<<(ostream &ostream, const pair<t1, t2> &p) {
-  return (ostream << p.first << " " << p.second);
-}
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
 
-template <typename t>
-ostream &operator<<(ostream &ostream, const vector<t> &c) {
-  for (auto &it : c) cout << it << " ";
-  return ostream;
-}
-
-int lcm(int a, int b) { return a * b / __gcd(a, b); }
-
-void helper() {
-  
-}
-
-int32_t main() {
-  fast int t = 1;
-  // cin>>t;
-  while (t--) {
-    helper();
-  }
+    return 0;
 }
