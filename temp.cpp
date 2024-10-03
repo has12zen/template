@@ -14,11 +14,11 @@
 #include <ctime>
 #include <cassert>
 
-#define DEBUGGING true
+// #define DEBUGGING true
 
 #ifdef DEBUGGING
-    #include "../cpp-dump/cpp-dump.hpp"
-    namespace cp = cpp_dump;
+#include "../cpp-dump/cpp-dump.hpp"
+namespace cp = cpp_dump;
 #endif
 
 using namespace std;
@@ -37,6 +37,9 @@ using namespace std;
 #define sz(x) (int)(x.size())
 #define rep(i, a, b) for (int i = a; i < b; ++i)
 #define repr(i, a, b) for (int i = a; i >= b; --i)
+#define Yes "Yes"
+#define No "No"
+#define spc " "
 #define endl '\n'
 
 const int MOD = 1e9 + 7;
@@ -49,16 +52,12 @@ void solve()
     // Your code here
     int n;
     string s;
-
-#ifdef DEBUGGING
-    cout << "Debug mode: n = " << n << ", s = " << s << endl;
-#endif
 }
 
 int main()
 {
     fast_io;
-    
+
 #ifdef DEBUGGING
     CPP_DUMP_SET_OPTION(es_style, cp::types::es_style_t::no_es);
 #endif
